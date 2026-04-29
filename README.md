@@ -1,6 +1,6 @@
 # Rails SaaS Starter
 
-A production-style backend application built with Ruby on Rails.
+A production-style SaaS backend application built with Ruby on Rails.
 
 ## 🚀 Features
 
@@ -20,10 +20,7 @@ A production-style backend application built with Ruby on Rails.
 
 ## 🛠 Tech Stack
 
-* Ruby on Rails
-* PostgreSQL
-* Redis
-* Sidekiq
+Ruby on Rails • PostgreSQL • Redis • Sidekiq • Docker
 
 ## 📦 API Endpoints
 
@@ -35,7 +32,29 @@ POST /api/v1/expenses
 
 GET /api/v1/expenses
 
-## ⚙️ Setup
+---
+
+## 🐳 Run with Docker
+
+### 1. Build & start services
+
+```bash
+docker-compose up --build
+```
+
+### 2. Setup database (first time only)
+
+```bash
+docker-compose exec web rails db:create db:migrate db:seed
+```
+
+### 3. Access app
+
+http://localhost:3000
+
+---
+
+## ⚙️ Run Locally (without Docker)
 
 ```bash
 bundle install
@@ -43,12 +62,8 @@ rails db:create db:migrate db:seed
 rails server
 ```
 
-## ▶️ Run Sidekiq
-
-```bash
-bundle exec sidekiq
-```
+---
 
 ## 💡 Why this project?
 
-Built to demonstrate real-world backend engineering practices including background jobs, caching, and scalable architecture.
+Built to demonstrate real-world backend engineering practices including background jobs, caching, API versioning, and containerized deployment.

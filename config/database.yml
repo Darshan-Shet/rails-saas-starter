@@ -15,6 +15,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  host: <%= ENV["RAILS_SAAS_STARTER_DATABASE_HOST"] || "db" %>
   username: <%= ENV["RAILS_SAAS_STARTER_DATABASE_USERNAME"] || "postgres" %>
   password: <%= ENV["RAILS_SAAS_STARTER_DATABASE_PASSWORD"] || "postgres" %>
   # For details on connection pooling, see Rails configuration guide
