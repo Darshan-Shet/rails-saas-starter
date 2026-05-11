@@ -41,7 +41,7 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 # Authentication solution for Rails
-gem "devise", "~> 5.0.3"
+gem "devise", "~> 5.0.4"
 
 gem "sidekiq", "~> 8.1.3"
 gem "redis", "~> 5.4.1"
