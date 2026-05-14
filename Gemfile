@@ -43,7 +43,7 @@ gem "thruster", require: false
 # Authentication solution for Rails
 gem "devise", "~> 5.0.3"
 
-gem "sidekiq", "~> 8.1.3"
+gem "sidekiq", "~> 8.1.5"
 gem "redis", "~> 5.4.1"
 
 group :development, :test do
